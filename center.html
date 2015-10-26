@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <title>
+      Happy Birthday Ruchi!
+    </title>
+    <script type="text/javascript">
+      r = 255;
+      g = 255;
+			b = 255;
+			flag = 0;
+			t = new Array;
+			o = new Array;
+			d = new Array;
+			function hex (a, c){
+				t[a] = Math.floor (c / 16)
+				o[a] = c % 16
+				switch (t[a]){
+					case 10 :
+						t[a] = 'A';
+						break;
+					case 11 :
+						t[a] = 'B';
+						break;
+					case 12 :
+						t[a] = 'C';
+						break;
+					case 13 :
+						t[a] = 'D';
+						break;
+					case 14 :
+						t[a] = 'E';
+						break;
+					case 15 :
+						t[a] = 'F';
+						break;
+					default :
+  					break;
+				}
+				switch (o[a]){
+					case 10 :
+						o[a] = 'A';
+						break;
+					case 11 :
+						o[a] = 'B';
+						break;
+					case 12 :	
+						o[a] = 'C';
+						break;
+					case 13 :
+						o[a] = 'D';
+						break;
+					case 14 :
+						o[a] = 'E';
+						break;
+					case 15 :
+            o[a] = 'F';
+						break;
+					default:
+						break;
+				}
+		}
+		function ran (a, c){
+			if ( (Math.random () > 2 / 3 || c == 0 ) && c < 255){
+				c++
+				d[a] = 2;
+			}
+			else{
+				if ((Math.random () <= 1 / 2 || c == 255) && c > 0){
+					c--
+					d[a] = 1;
+				}
+				else{
+					d[a] = 0;
+				}
+			}
+			return c
+		}
+		function do_it (a, c){
+			if ((d[a] == 2 && c < 255) || c == 0){
+				c++
+				d[a] = 2
+			}
+			else{
+				if ((d[a] == 1 && c > 0) || c == 255){
+					c--;
+					d[a] = 1;
+				}
+			}
+			if (a == 3){
+				if (d[1] == 0 && d[2] == 0 && d[3] == 0)
+				flag = 1
+			}
+			return c
+		}
+		function disco (){
+			if (flag == 0){
+				r = ran (1, r);
+				g = ran (2, g);
+				b = ran (3, b);
+				hex (1, r)
+				hex (2, g)
+				hex (3, b)
+				document.body.style.background="#" + t[1] + o[1] + t[2] + o[2] + t[3] + o[3]
+				flag = 50
+			}
+			else{
+				r = do_it (1, r)
+				g = do_it (2, g)
+				b = do_it (3, b)
+				hex (1, r)
+				hex (2, g)
+				hex (3, b)
+				document.body.style.background="#" + t[1] + o[1] + t[2] + o[2] + t[3] + o[3]
+				flag--
+			}
+			setTimeout ('disco ()', 30)
+		}
+    </script> 
+    <p align=center><script language="javascript" type="text/javascript"src="http://htmlfreecodes.com/userdata/heart.js"></script></p>
+  </head>
+
+  <body>
+    <body onload="disco()">
+
+<marquee style="z-index:2;position:absolute;center:28px;top:197px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:200px;"scrollamount="3" direction="down">Happy Birthday Ruchi </marquee>
+<marquee style="z-index:2;position:absolute;center:1px;top:89px;font-family:Cursive;font-size:14pt;color:white;height:100px;"scrollamount="7" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:111px;top:7px;font-family:Cursive;font-size:14pt;color:white;height:302px;"scrollamount="4" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:225px;top:83px;font-family:Cursive;font-size:14pt;color:white;height:371px;"scrollamount="3" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:105px;top:53px;font-family:Cursive;font-size:14pt;color:white;height:317px;"scrollamount="2" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:168px;top:69px;font-family:Cursive;font-size:14pt;color:white;height:369px;"scrollamount="1" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:130px;top:117px;font-family:Cursive;font-size:14pt;color:white;height:289px;"scrollamount="7" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:176px;top:57px;font-family:Cursive;font-size:14pt;color:white;height:78px;"scrollamount="7" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:16px;top:57px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:56px;"scrollamount="5" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:300px;top:86px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:194px;"scrollamount="2" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:292px;top:10px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:251px;"scrollamount="6" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:278px;top:74px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:154px;"scrollamount="1"direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:241px;top:72px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:82px;"scrollamount="3" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:276px;top:32px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:70px;"scrollamount="8" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:272px;top:15px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:334px;"scrollamount="11" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:90px;top:38px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:167px;"scrollamount="7" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:275px;top:108px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:375px;"scrollamount="7" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:22px;top:76px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:12px;"scrollamount="7" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:89px;top:54px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:366px;"scrollamount="2" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:26px;top:72px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:358px;"scrollamount="1" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:3px;top:44px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:130px;"scrollamount="3" direction="down">Happy Birthday Ruchi</marquee> 
+<marquee style="z-index:2;position:absolute;center:300px;top:108px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:375px;"scrollamount="7" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:335px;top:76px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:125px;"scrollamount="7" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:400px;top:54px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:366px;"scrollamount="2" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:355px;top:72px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:358px;"scrollamount="1" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:380px;top:44px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:375px;"scrollamount="3" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:28px;top:197px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:200px;"scrollamount="3" direction="down">Happy Birthday Ruchi </marquee>
+<marquee style="z-index:2;position:absolute;center:1px;top:89px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:100px;"scrollamount="7" direction="down">Happy Birthday ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:111px;top:7px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:302px;"scrollamount="4" direction="down">Happy Birthday ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:225px;top:83px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:371px;"scrollamount="3" direction="down">Happy Birthday ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:105px;top:53px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:317px;"scrollamount="2" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:168px;top:69px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:369px;"scrollamount="1" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:130px;top:117px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:289px;"scrollamount="7" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:176px;top:57px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:78px;"scrollamount="7" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:16px;top:57px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:56px;"scrollamount="5" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:300px;top:86px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:194px;"scrollamount="2" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:292px;top:10px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:251px;"scrollamount="6" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:278px;top:74px;font-family:Cursive;font-size:14pt;color:#ffcc00;height:154px;"scrollamount="1"direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:241px;top:72px;font-family:Cursive;font-size:14pt;color:white;height:82px;"scrollamount="3" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:276px;top:32px;font-family:Cursive;font-size:14pt;color:white;height:70px;"scrollamount="8" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:272px;top:15px;font-family:Cursive;font-size:14pt;color:white;height:334px;"scrollamount="11" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:90px;top:38px;font-family:Cursive;font-size:14pt;color:white;height:167px;"scrollamount="7" direction="down">Happy Birthday Ruchi</marquee>
+<marquee style="z-index:2;position:absolute;center:275px;top:108px;font-family:Cursive;font-size:14pt;color:white;height:375px;"scrollamount="7" direction="down">Happy Birthday Ruchi</marquee>
+
+   
+     </br> </br></br></br></br> </br>    </br>    </br>    </br>    </br>
+    
+    </br>    </br>
+    </br>    </br>    </br>    </br>    </br>    </br>    </br>    </br>
+    </br>
+    </br>
+    <center>
+	  <a href="http://notes.io/8eY" target="_blank"> HAPPY BIRTHDAY TO U</a>
+    </center>
